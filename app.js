@@ -1,5 +1,29 @@
-// file is linked
-function getComputerChoice (number) {
-    return Math.floor(Math.random() * number) + 1;
+function getComputerChoice() {
+    let number = Math.floor(Math.random() * 3) + 1;
+    //console.log(number);
+    if (number == 1) {
+        choice = 'rock'
+    }
+    else if (number == 2) {
+        choice = 'paper'
+    }
+    else {
+        choice = 'scissors'
+    }
+    return choice;
 }
-//console.log(getComputerChoice(3));
+console.log(getComputerChoice());
+/* let number = Math.floor(Math.random() * 3) + 1;
+    //console.log(number);
+    if (number == 1) {
+        choice = 'rock'
+    }
+    else if (number == 2) {
+        choice = 'paper'
+    }
+    else {
+        choice = 'scissors'
+    }
+    //console.log(choice); */
+
+//console.log();
