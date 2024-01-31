@@ -12,7 +12,25 @@ function getComputerChoice() {
     }
     return choice;
 }
-//console.log(getComputerChoice());
+console.log(getComputerChoice());
+
+function getPlayerChoice() {
+    let playerInput = prompt('Type your choice!')
+
+    if (playerInput.toLowerCase() == 'rock') {
+        return 'rock';
+    }
+    else if (playerInput.toLowerCase() == 'paper') {
+        return 'paper'
+    }
+    else if (playerInput.toLowerCase() == 'scissors') {
+        return 'scissors'
+    }
+    else {
+        return 'That is not a valid option.'
+    }
+}
+console.log(getPlayerChoice());
 
 function playRound(playerSelection, computerSelection) {
     if(playerSelection > computerSelection) {
@@ -25,6 +43,6 @@ function playRound(playerSelection, computerSelection) {
         return 'Tie round! Try again!'
     }
 }
-const playerSelection = 'rock';
+/* const playerSelection = getPlayerChoice();
 const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+console.log(playRound(playerSelection,computerSelection)); */
