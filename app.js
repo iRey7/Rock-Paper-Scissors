@@ -12,7 +12,7 @@ function getComputerChoice() {
     }
     return choice;
 }
-console.log(getComputerChoice());
+//console.log(getComputerChoice());
 
 function getPlayerChoice() {
     let playerInput = prompt('Type your choice!')
@@ -30,7 +30,7 @@ function getPlayerChoice() {
         return 'That is not a valid option.'
     }
 }
-console.log(getPlayerChoice());
+//console.log(getPlayerChoice());
 
 function playRound(playerSelection, computerSelection) {
     if(playerSelection > computerSelection) {
@@ -39,10 +39,14 @@ function playRound(playerSelection, computerSelection) {
     else if(playerSelection < computerSelection) {
         return 'You lose! Try again'
     }
-    else {
+    else if(playerSelection = computerSelection) {
         return 'Tie round! Try again!'
     }
+    else {
+        return 'Comparisons have not been made'
+    }
 }
-/* const playerSelection = getPlayerChoice();
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection,computerSelection)); */
+
+//let playerSelection = getPlayerChoice();
+//let computerSelection = getComputerChoice();
+//console.log(playRound(getPlayerChoice(),getComputerChoice()));
