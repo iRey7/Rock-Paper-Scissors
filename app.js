@@ -2,16 +2,16 @@ function getComputerChoice() {
     let number = Math.floor(Math.random() * 3) + 1;
     //console.log(number);
     if (number == 1) {
-        choice = 'rock'
+        choice = 'rock';
     }
     else if (number == 2) {
-        choice = 'paper'
+        choice = 'paper';
     }
     else if(number == 3) {
-        choice = 'scissors'
+        choice = 'scissors';
     }
     else {
-        choice = 'Computer choice is invalid'
+        choice = 'Computer choice is invalid';
     }
     return choice;
 }
@@ -24,13 +24,13 @@ function getPlayerChoice() {
         return 'rock';
     }
     else if (playerInput.toLowerCase() == 'paper') {
-        return 'paper'
+        return 'paper';
     }
     else if (playerInput.toLowerCase() == 'scissors') {
-        return 'scissors'
+        return 'scissors';
     }
     else {
-        return 'That is not a valid option.'
+        return 'That is not a valid option.';
     }
 }
 //console.log(getPlayerChoice());
@@ -40,27 +40,27 @@ function getPlayerChoice() {
 function playRound(playerSelection, computerSelection) {
     if((playerSelection == 'rock') && (computerSelection == 'paper')) {
         //Add point to computer here
-        return `You lost this round ${computerSelection} beats ${playerSelection}!`
+        return `You lost this round ${computerSelection} beats ${playerSelection}!`;
     }
     else if((playerSelection == 'paper') && (computerSelection == 'scissors')) {
         //Add point to computer here
-        return `You lost this round ${computerSelection} beats ${playerSelection}!`
+        return `You lost this round ${computerSelection} beats ${playerSelection}!`;
     }
     else if((playerSelection == 'scissors') && (computerSelection == 'rock')) {
         //Add point to computer here
-        return `You lost this round ${computerSelection} beats ${playerSelection}!`
+        return `You lost this round ${computerSelection} beats ${playerSelection}!`;
     }
     else if ((playerSelection == 'rock') && (computerSelection == 'scissors')) {
         //Add point to player here
-        return `You won this round ${computerSelection} loses ${playerSelection}!`
+        return `You won this round ${computerSelection} loses ${playerSelection}!`;
     }
     else if ((playerSelection == 'paper') && (computerSelection == 'rock')) {
         //Add point to player here
-        return `You won this round ${computerSelection} loses to ${playerSelection}!`
+        return `You won this round ${computerSelection} loses to ${playerSelection}!`;
     }
     else if ((playerSelection == 'scissors') && (computerSelection == 'paper')) {
         //Add point to player here
-        return `You won this round ${computerSelection} loses to ${playerSelection}!`
+        return `You won this round ${computerSelection} loses to ${playerSelection}!`;
     }
     else {
         //No point added
