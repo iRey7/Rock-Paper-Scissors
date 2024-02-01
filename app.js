@@ -50,8 +50,21 @@ function playRound(playerSelection, computerSelection) {
         //Add point to computer here
         return `You lost this round ${computerSelection} beats ${playerSelection}!`
     }
+    else if ((playerSelection == 'rock') && (computerSelection == 'scissors')) {
+        //Add point to player here
+        return `You won this round ${computerSelection} loses ${playerSelection}!`
+    }
+    else if ((playerSelection == 'paper') && (computerSelection == 'rock')) {
+        //Add point to player here
+        return `You won this round ${computerSelection} loses to ${playerSelection}!`
+    }
+    else if ((playerSelection == 'scissors') && (computerSelection == 'paper')) {
+        //Add point to player here
+        return `You won this round ${computerSelection} loses to ${playerSelection}!`
+    }
     else {
-        return 'What the heck ' + `${computerSelection} ${playerSelection}`;
+        //No point added
+        return 'It is a tie ' + `${computerSelection} ${playerSelection}`;
     }
 }
 
