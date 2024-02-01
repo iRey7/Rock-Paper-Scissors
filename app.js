@@ -1,6 +1,6 @@
 function getComputerChoice() {
     let number = Math.floor(Math.random() * 3) + 1;
-    console.log(number);
+    //console.log(number);
     if (number == 1) {
         choice = 'rock'
     }
@@ -34,31 +34,36 @@ function getPlayerChoice() {
     }
 }
 //console.log(getPlayerChoice());
-
+/*  set the rules on what beats what
+    set the win conditions
+    based on win add a score */
 function playRound(playerSelection, computerSelection) {
-    if(playerSelection > computerSelection) {
-        return 'You win!'
+    if((playerSelection == 'rock') && (computerSelection == 'paper')) {
+        //Add point to computer here
+        return `You lost this round ${computerSelection} beats ${playerSelection}!`
     }
-    else if(playerSelection < computerSelection) {
-        return 'You lose! Try again'
+    else if((playerSelection == 'paper') && (computerSelection == 'scissors')) {
+        //Add point to computer here
+        return `You lost this round ${computerSelection} beats ${playerSelection}!`
     }
-    else if(playerSelection = computerSelection) {
-        return 'Tie round! Try again!'
+    else if((playerSelection == 'scissors') && (computerSelection == 'rock')) {
+        //Add point to computer here
+        return `You lost this round ${computerSelection} beats ${playerSelection}!`
     }
     else {
-        return 'Comparisons have not been made'
+        return 'What the heck ' + `${computerSelection} ${playerSelection}`;
     }
 }
 
 //let playerSelection = getPlayerChoice();
 //let computerSelection = getComputerChoice();
-//console.log(playRound(getPlayerChoice(),getComputerChoice()));
+console.log(playRound(getPlayerChoice(), getComputerChoice()));
 
 /* Create a function to play game
     keep score
     report a winner
     5 rounds */
-function playGame() {
+/* function playGame() {
     return playRound(getPlayerChoice(),getComputerChoice());
 }
-console.log(playGame());
+console.log(playGame());*/
