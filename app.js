@@ -70,13 +70,13 @@ function playRound(playerSelection, computerSelection) {
 
 //let playerSelection = getPlayerChoice();
 //let computerSelection = getComputerChoice();
-console.log(playRound(getPlayerChoice(), getComputerChoice()));
+//console.log(playRound(getPlayerChoice(), getComputerChoice()));
 
 /* Create a function to play game
     keep score
     report a winner
     5 rounds */
-/* function playGame() {
+function playGame() {
     return playRound(getPlayerChoice(),getComputerChoice());
 }
-console.log(playGame());*/
+console.log(playGame());
