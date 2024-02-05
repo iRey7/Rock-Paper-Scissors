@@ -62,6 +62,9 @@ function playRound(playerSelection, computerSelection) {
         //Add point to player here
         return `You won this round ${computerSelection} loses to ${playerSelection}!`;
     }
+    else if ((playerSelection != 'rock' || 'paper' || 'scissors')) {
+        return `This round cannot be played! ${playerSelection}`;
+    }
     else {
         //No point added
         return 'It is a tie ' + `${computerSelection} ${playerSelection}`;
