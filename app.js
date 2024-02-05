@@ -80,6 +80,10 @@ function playRound(playerSelection, computerSelection) {
     report a winner
     5 rounds */
 function playGame() {
-    return playRound(getPlayerChoice(),getComputerChoice());
+    console.log(playRound(getPlayerChoice(), getComputerChoice()));
+    console.log(playRound(getPlayerChoice(), getComputerChoice()));
+    console.log(playRound(getPlayerChoice(), getComputerChoice()));
+    console.log(playRound(getPlayerChoice(), getComputerChoice()));
+    console.log(playRound(getPlayerChoice(), getComputerChoice()));
 }
 console.log(playGame());
