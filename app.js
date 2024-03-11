@@ -103,5 +103,12 @@ function playGame() {
     console.log(`CPU Score ${cpuPoints}`, `Player Score ${pPoints}`);
     console.log(playRound(getPlayerChoice(), getComputerChoice()));
     console.log(`CPU Score ${cpuPoints}`, `Player Score ${pPoints}`);
+
+    if (cpuPoints > pPoints) {
+        console.log('The BOT has won!')
+    }
+    else {
+        console.log('You win!')
+    }
 }
 console.log(playGame());
