@@ -1,3 +1,8 @@
+/* You are a beginner, it is okay to be stuck all the time
+   and not get anything. It is part of the process. You learn
+   to then understand which helps you learn more and understand
+   more. Learning is challenging but the growth is exponentional */
+
 function getComputerChoice() {
     let number = Math.floor(Math.random() * 3) + 1;
     //console.log(number);
@@ -52,7 +57,7 @@ function playRound(playerSelection, computerSelection) {
     }
     else if ((playerSelection == 'rock') && (computerSelection == 'scissors')) {
         //Add point to player here
-        return `You won this round ${computerSelection} loses ${playerSelection}!`;
+        return `You won this round ${computerSelection} loses to ${playerSelection}!`;
     }
     else if ((playerSelection == 'paper') && (computerSelection == 'rock')) {
         //Add point to player here
