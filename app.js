@@ -42,17 +42,21 @@ function getPlayerChoice() {
 /*  set the rules on what beats what
     set the win conditions
     based on win add a score */
+    let cpuPoints = 0;
 function playRound(playerSelection, computerSelection) {
     if((playerSelection == 'rock') && (computerSelection == 'paper')) {
         //Add point to computer here
+        cpuPoints ++;
         return `You lost this round ${computerSelection} beats ${playerSelection}!`;
     }
     else if((playerSelection == 'paper') && (computerSelection == 'scissors')) {
         //Add point to computer here
+        cpuPoints ++;
         return `You lost this round ${computerSelection} beats ${playerSelection}!`;
     }
     else if((playerSelection == 'scissors') && (computerSelection == 'rock')) {
         //Add point to computer here
+        cpuPoints ++;
         return `You lost this round ${computerSelection} beats ${playerSelection}!`;
     }
     else if ((playerSelection == 'rock') && (computerSelection == 'scissors')) {
@@ -86,9 +90,11 @@ function playRound(playerSelection, computerSelection) {
     5 rounds */
 function playGame() {
     console.log(playRound(getPlayerChoice(), getComputerChoice()));
+    console.log(cpuPoints);
     console.log(playRound(getPlayerChoice(), getComputerChoice()));
+    console.log(cpuPoints);
+    /*console.log(playRound(getPlayerChoice(), getComputerChoice()));
     console.log(playRound(getPlayerChoice(), getComputerChoice()));
-    console.log(playRound(getPlayerChoice(), getComputerChoice()));
-    console.log(playRound(getPlayerChoice(), getComputerChoice()));
+    console.log(playRound(getPlayerChoice(), getComputerChoice()));*/
 }
 console.log(playGame());
