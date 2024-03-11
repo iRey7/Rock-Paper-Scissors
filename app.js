@@ -94,11 +94,14 @@ function playRound(playerSelection, computerSelection) {
     5 rounds */
 function playGame() {
     console.log(playRound(getPlayerChoice(), getComputerChoice()));
-    console.log("CPU Score " + cpuPoints, "Player Score " + pPoints);
+    console.log(`CPU Score ${cpuPoints}`, `Player Score ${pPoints}`);
     console.log(playRound(getPlayerChoice(), getComputerChoice()));
-    console.log(cpuPoints, pPoints);
-    /*console.log(playRound(getPlayerChoice(), getComputerChoice()));
+    console.log(`CPU Score ${cpuPoints}`, `Player Score ${pPoints}`);
     console.log(playRound(getPlayerChoice(), getComputerChoice()));
-    console.log(playRound(getPlayerChoice(), getComputerChoice()));*/
+    console.log(`CPU Score ${cpuPoints}`, `Player Score ${pPoints}`);
+    console.log(playRound(getPlayerChoice(), getComputerChoice()));
+    console.log(`CPU Score ${cpuPoints}`, `Player Score ${pPoints}`);
+    console.log(playRound(getPlayerChoice(), getComputerChoice()));
+    console.log(`CPU Score ${cpuPoints}`, `Player Score ${pPoints}`);
 }
 console.log(playGame());
