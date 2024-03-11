@@ -43,6 +43,7 @@ function getPlayerChoice() {
     set the win conditions
     based on win add a score */
     let cpuPoints = 0;
+    let pPoints = 0;
 function playRound(playerSelection, computerSelection) {
     if((playerSelection == 'rock') && (computerSelection == 'paper')) {
         //Add point to computer here
@@ -61,14 +62,17 @@ function playRound(playerSelection, computerSelection) {
     }
     else if ((playerSelection == 'rock') && (computerSelection == 'scissors')) {
         //Add point to player here
+        pPoints ++;
         return `You won this round ${computerSelection} loses to ${playerSelection}!`;
     }
     else if ((playerSelection == 'paper') && (computerSelection == 'rock')) {
         //Add point to player here
+        pPoints ++;
         return `You won this round ${computerSelection} loses to ${playerSelection}!`;
     }
     else if ((playerSelection == 'scissors') && (computerSelection == 'paper')) {
         //Add point to player here
+        pPoints ++;
         return `You won this round ${computerSelection} loses to ${playerSelection}!`;
     }
     else if ((playerSelection != 'rock' || 'paper' || 'scissors')) {
@@ -90,9 +94,9 @@ function playRound(playerSelection, computerSelection) {
     5 rounds */
 function playGame() {
     console.log(playRound(getPlayerChoice(), getComputerChoice()));
-    console.log(cpuPoints);
+    console.log("CPU Score " + cpuPoints, "Player Score " + pPoints);
     console.log(playRound(getPlayerChoice(), getComputerChoice()));
-    console.log(cpuPoints);
+    console.log(cpuPoints, pPoints);
     /*console.log(playRound(getPlayerChoice(), getComputerChoice()));
     console.log(playRound(getPlayerChoice(), getComputerChoice()));
     console.log(playRound(getPlayerChoice(), getComputerChoice()));*/
