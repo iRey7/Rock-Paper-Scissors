@@ -92,7 +92,7 @@ function playRound(playerSelection, computerSelection) {
     keep score
     report a winner
     5 rounds */
-function playGame() {
+/*function playGame() {
     console.log(playRound(getPlayerChoice(), getComputerChoice()));
     console.log(`CPU Score ${cpuPoints}`, `Player Score ${pPoints}`);
     console.log(playRound(getPlayerChoice(), getComputerChoice()));
@@ -111,4 +111,4 @@ function playGame() {
         console.log('You win!')
     }
 }
-console.log(playGame());
+console.log(playGame());*/
